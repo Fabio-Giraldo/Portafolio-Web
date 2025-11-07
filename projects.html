@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Proyectos | Portfolio</title>
+
+        <!-- Enlace al CSS externo -->
+         <link rel="stylesheet" href="css\projects.css">
+         <link rel="stylesheet" href="css\style.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">C</div>
+                <ul class="nav-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#" title="GitHub">#</a>
+                    <a href="#" title="LinkedIn">#</a>
+                    <a href="#" title="Behance">#</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <!-- Hero Section -->
+             <section class="page-hero">
+                <div class="hero-content">
+                    <h1 class="page-title">Mis Proyectos</h1>
+                    <p class="page-subtitle">CREATIVIDAD EN PROGRESO</p>
+                </div>
+            </section>
+            
+            <!-- Projects Section -->
+            <section class="projects-section">
+                <!-- Filtros -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="design">Diseño</button>
+                    <button class="filter-btn" data-filter="app">Apps</button>
+                    <button class="filter-btn" data-filter="other">Otros</button>
+                </div>
+                
+                <!-- Grid de proyectos -->
+                <div class="projects-grid" id="projectsGrid">
+                    <!-- Ejemplo de tarjeta -->
+                     <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <span class="project-tag">WEB</span>
+                            <img src="Img\Toma de pedidos.png">
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Toma de pedidos</h3>
+                            <p class="project-description">
+                                Plataforma para la toma de pedidos de un restaurante sencilla que solo busca optimizar la atencion al cliente y la eficiencia de su toma de pedidos.
+                            </p>
+                            <div class="project-technologies">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="proyectos\index.html" class="project-link primary">Ver Proyecto</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Más tarjetas aquí... -->
+                </div>
+            </section>
+        </main>
+        <footer>
+            <h1> Hola Gente</h1>
+        </footer>
+        <script src="js\projects.js"></script>
+    </body>
+</html>
