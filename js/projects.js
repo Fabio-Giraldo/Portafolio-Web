@@ -10,7 +10,13 @@ filterButtons.forEach(button => {
         // Actualizar botón activo
         filterButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
-
+        
+        // SOLUCIÓN: Eliminar mensaje anterior PRIMERO
+        const existingEmptyState = projectsGrid.querySelector('.empty-state');
+        if (existingEmptyState) {
+            existingEmptyState.remove();
+        }
+        
         // Filtrar proyectos
         let visibleCount = 0;
         projectCards.forEach(card => {
@@ -25,7 +31,7 @@ filterButtons.forEach(button => {
                 card.style.display = 'none';
             }
         });
-
+        
         // Mostrar estado vacío si no hay proyectos
         if (visibleCount === 0) {
             const emptyState = document.createElement('div');
@@ -35,11 +41,6 @@ filterButtons.forEach(button => {
                 <p class="empty-state-text">No hay proyectos en esta categoría aún</p>
             `;
             projectsGrid.appendChild(emptyState);
-        } else {
-            const emptyState = projectsGrid.querySelector('.empty-state');
-            if (emptyState) {
-                emptyState.remove();
-            }
         }
     });
 });
