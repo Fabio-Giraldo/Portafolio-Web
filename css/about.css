@@ -11,8 +11,6 @@
             color: #fff;
         }
 
-        
-
         /* Hero Section */
         .about-hero {
             height: 40vh;
@@ -272,6 +270,101 @@
         }
 
         /* Education & Experience */
+
+        /* Reemplaza todo el CSS de los badges con este código */
+
+        /* Contenedor principal de badges */
+        .badges-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+            margin: 60px 0;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        /* Wrapper individual de cada badge */
+        .badge-wrapper {
+            flex: 0 1 auto;
+            margin: 0;
+            text-align: center;
+        }
+
+        .badge-wrapper h4 {
+            margin-bottom: 20px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 18px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+
+        /* Contenedor del badge con estilo oscuro */
+        .badge-compact {
+            display: inline-block;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+        }
+
+        .badge-compact:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 35px rgba(255, 0, 110, 0.25);
+            border-color: rgba(255, 0, 110, 0.4);
+            background: rgba(255, 255, 255, 0.07);
+        }
+
+        .badge-compact iframe {
+            display: block;
+            border-radius: 10px;
+            background: white;
+        }
+
+        /* Estilo específico para el badge de Credly */
+        .credly-badge {
+            min-height: 290px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Responsive para tablets */
+        @media (max-width: 968px) {
+            .badges-container {
+                gap: 30px;
+                padding: 30px 15px;
+            }
+            
+            .badge-wrapper h4 {
+                font-size: 16px;
+            }
+        }
+
+        /* Responsive para móviles */
+        @media (max-width: 768px) {
+            .badges-container {
+                flex-direction: column;
+                gap: 40px;
+                padding: 30px 20px;
+            }
+            
+            .badge-compact {
+                padding: 15px;
+                max-width: 100%;
+            }
+            
+            .badge-wrapper h4 {
+                font-size: 15px;
+            }
+        }
+
+
+
         .timeline-section {
             margin-bottom: 100px;
         }
